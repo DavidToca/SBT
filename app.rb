@@ -1,8 +1,10 @@
 require 'json'
+require 'sass'
 require 'mongo'
 require 'mongo_mapper'
 require 'sinatra/base'
 require 'sinatra/reloader'
+
 
 module MyApplication
 	class App < Sinatra::Base 
@@ -14,7 +16,8 @@ module MyApplication
     end
 
     get '/' do
-    	erb :"index"
+    	#erb :"index"
+    	"hello world"
     end
 
 
