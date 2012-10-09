@@ -1,0 +1,13 @@
+.sass-cache/
+.sass-cache/*
+.project
+*.gem
+*.rbc
+.bundle
+.config
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+Gemfile.lock

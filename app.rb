@@ -8,10 +8,19 @@ module MyApplication
 	class App < Sinatra::Base 
 
 		#set :environment, :development
-		
+
 		configure :development do
       register Sinatra::Reloader
     end
 
+    get '/' do
+    	erb :"index"
+    end
+
+
+    get '/stylesheet/:name.css' do
+			content_type 'text/css', :charset => 'utf-8'
+			scss :"stylesheet/#{params[:name]}"
+		end
 	end
 end
