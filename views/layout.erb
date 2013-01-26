@@ -10,10 +10,16 @@
   <meta name="viewport" content="width=device-width">
   <title>SBT</title>
   <link rel="stylesheet" href="/stylesheet/style.css">
+  <%= yield_content :stylesheet %>
 </head>
 <body>
 	
 	<%= yield %>
 
+	<script type="text/javascript" src="/js/libs/jquery.js"></script>
+	<script type="text/javascript" src="/js/libs/angular.js"></script>
+	<script type="text/javascript" src="/js/libs/main.js"></script>
+
+	<%= yield_content :javascript %>
 </body>
 </html>

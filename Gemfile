@@ -15,9 +15,10 @@ gem "mongo_mapper"
 gem "json"
 gem "bson_ext"
 
-#TEST
 group :test do
   gem 'rspec', :require => 'spec'
   gem 'rack-test'
-  gem 'ZenTest'
 end
+
+gem 'newrelic_rpm'
+gem 'shotgun'

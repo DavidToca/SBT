@@ -1,5 +1,3 @@
-require './helpers/helperdo'
-
 module MyApplication
 	class Module < App
 

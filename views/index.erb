@@ -1,2 +1,11 @@
 <h1>Hello World</h1>
 <p>:D awesome code</p>
+
+
+<% content_for :javascript do %>
+	<script type="text/javascript">
+		$(document).on('ready',function(){
+			console.log("enjoy");
+		});
+	</script>
+<% end %>
